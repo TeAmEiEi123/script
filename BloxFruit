@@ -1,0 +1,58 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("TEAM X HUB BETA TEST EIEI", "DarkTheme")
+local Tab = Window:NewTab("Auto Farm")
+local Section = Tab:NewSection("Auto Farm Level")
+    Section:NewToggle("Auto Farm", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+Section:NewToggle("Fast Attack", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+Section:NewToggle("Auto New World", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+local Tab = Window:NewTab("Teleport")
+local Section = Tab:NewSection("World Teleport")
+Section:NewButton("World 1", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("World 2", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("World 3", "ButtonInfo", function()
+    print("Clicked")
+end)
+
+local Section = Tab:NewSection("Island Teleport")
+Section:NewButton("Island 1", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(912.940918, 16.5166206, 1430.15015, -0.0738240853, 0, 0.997271299, 0, 1, 0, -0.997271299, 0, -0.0738240853)
+end)
+Section:NewButton("Island 2", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("Island 3", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("Island 4", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("Island 5", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("Island 6", "ButtonInfo", function()
+    print("Clicked")
+end)
+
